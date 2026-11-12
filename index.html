@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- custom -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>~*~ SHORK FAN PAGE ~*~ | $SHORK on Solana</title>
+<meta name="description" content="Welcome 2 the SHORK FAN PAGE!!! The blurry little shark who tells you to shut up. $SHORK, a meme coin on Solana. Sign the guestbook.">
+<meta name="theme-color" content="#003b8e">
+<meta property="og:title" content="SHORK ($SHORK) - dawg shut up">
+<meta property="og:description" content="The blurriest shark on the internet. Now on Solana. Best viewed underwater.">
+<meta property="og:image" content="banner.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+<style>
+:where(img){height:auto}
+:root{--deep:0;--navy:#001a4d;--aqua:#00e5ff;--lime:#ccff00;--hot:#ff00cc;--win:#c0c0c0;--comic:'Comic Sans MS','Comic Neue','Chalkboard SE',cursive;--px:'VT323',monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden}
+body{margin:0;font-family:'Times New Roman',Times,serif;font-size:17px;line-height:1.5;color:#fff;background:#002a66;
+  cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='20'%3E%3Cpath d='M2 10 Q10 0 20 6 L27 2 L24 10 L27 18 L20 14 Q10 20 2 10Z' fill='%2379a7e0' stroke='%23001a4d' stroke-width='1.5'/%3E%3Ccircle cx='8' cy='8' r='1.6' fill='%23000'/%3E%3C/svg%3E") 4 10,auto}
+a{color:var(--lime)} a:visited{color:#ff9cf0}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer}
+
+/* ---------- OCEAN PARALLAX (fixed stack) ---------- */
+#ocean{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.water{position:absolute;inset:0;background:linear-gradient(#36b7ff,#0a62c9 35%,#033a8a 70%,#000a1f)}
+.dark{position:absolute;inset:0;background:#000814;opacity:calc(var(--deep)*.82)}
+.rays{position:absolute;inset:-20% -10% 0;background:repeating-linear-gradient(100deg,transparent 0 60px,rgba(255,255,255,.07) 60px 90px,transparent 90px 170px);opacity:calc(.9 - var(--deep));will-change:transform}
+.tile{position:absolute;inset:-50% 0;opacity:.13;will-change:transform;
+  background-image:radial-gradient(circle at 20px 20px,#fff 2px,transparent 3px),radial-gradient(circle at 60px 50px,#9ff 1.5px,transparent 2.5px);background-size:80px 80px}
+.kelp{position:absolute;left:0;right:0;bottom:-60px;height:70vh;will-change:transform}
+.kelp svg{width:100%;height:100%}
+.kelp.k1{opacity:.45;filter:blur(2px)} .kelp.k2{opacity:.75} .kelp.k3{opacity:1;height:45vh}
+.sway{transform-origin:bottom;animation:sway 5s ease-in-out infinite alternate}
+@keyframes sway{to{transform:skewX(6deg)}}
+.bub{position:absolute;bottom:-30px;border-radius:50%;border:2px solid rgba(255,255,255,.7);background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.8) 0 15%,rgba(255,255,255,.08) 40%);animation:rise linear infinite}
+@keyframes rise{to{transform:translate3d(30px,-115vh,0)}}
+#swimmer{position:absolute;top:30vh;left:0;width:150px;height:150px;will-change:transform}
+#swimmer canvas{width:100%;height:100%;border-radius:50%;border:5px ridge #b8c4d6;box-shadow:0 0 0 4px #001a4d,0 10px 30px rgba(0,0,0,.5);image-rendering:pixelated}
+#swimmer .say{position:absolute;top:-34px;left:60%;white-space:nowrap;background:#fff;color:#000;font:700 15px var(--comic);padding:2px 8px;border:2px solid #000;border-radius:12px;opacity:0;transition:opacity .3s}
+#swimmer.talk .say{opacity:1}
+
+/* ---------- DEPTH METER ---------- */
+#depth{position:fixed;right:10px;top:50%;transform:translateY(-50%);z-index:30;width:62px;background:var(--win);color:#000;border:3px outset #fff;padding:4px;font:20px var(--px);text-align:center}
+#depth b{display:block;font-size:13px;font-family:Arial,sans-serif}
+#depth .tube{height:180px;margin:4px auto;width:18px;border:2px inset #fff;background:#001a4d;position:relative}
+#depth .fill{position:absolute;left:0;right:0;top:0;background:linear-gradient(#36b7ff,#000);height:0}
+#depth .ft{color:#c00}
+@media(max-width:700px){#depth{top:auto;bottom:8px;transform:none;width:54px}#depth .tube{height:70px}}
+
+/* ---------- GEOCITIES CHROME ---------- */
+.marq{background:#000;color:var(--lime);font:22px var(--px);white-space:nowrap;overflow:hidden;border-top:3px ridge #888;border-bottom:3px ridge #888}
+.marq span{display:inline-block;padding-left:100%;animation:marq 22s linear infinite}
+@keyframes marq{to{transform:translateX(-100%)}}
+.wrap{max-width:900px;margin:0 auto;padding:0 14px 60px}
+.box{background:rgba(0,10,40,.72);border:4px ridge #7fd8ff;margin:46px 0;padding:18px 20px;position:relative;backdrop-filter:blur(2px)}
+.box.lt{background:#fffbe6;color:#111;border-color:#e0b000}
+.box.lt a{color:#0000ee}
+h1,h2,h3{font-family:var(--comic);margin:0 0 10px;line-height:1.1}
+h2{font-size:clamp(26px,5vw,40px);color:var(--lime);text-shadow:3px 3px 0 var(--hot)}
+.box.lt h2{color:#ff0080;text-shadow:2px 2px 0 #ffd400}
+.rain{height:8px;border:0;margin:20px 0;background:linear-gradient(90deg,red,orange,yellow,lime,cyan,blue,violet,red);background-size:200% 100%;animation:rb 3s linear infinite}
+@keyframes rb{to{background-position:200% 0}}
+.blink{animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.uc{display:flex;align-items:center;gap:12px;justify-content:center;margin:14px auto;max-width:520px;padding:8px;font:700 18px Arial Black,Impact,sans-serif;color:#000;
+  background:repeating-linear-gradient(45deg,#ffd400 0 18px,#111 18px 36px);border:3px solid #000}
+.uc span{background:#ffd400;padding:2px 10px}
+.digger{width:38px;height:38px;flex:0 0 38px;background:#ffd400;border-radius:50%;position:relative;animation:dig .6s ease-in-out infinite alternate}
+.digger:after{content:"";position:absolute;right:-14px;top:14px;width:20px;height:5px;background:#555;transform:rotate(30deg)}
+@keyframes dig{to{transform:rotate(-14deg) translateY(3px)}}
+
+/* ---------- HERO ---------- */
+.hero{text-align:center;padding:40px 0 10px}
+.welcome{font:700 clamp(18px,3vw,24px) var(--comic);color:#fff;text-shadow:2px 2px #000}
+.title{font:900 clamp(64px,16vw,160px)/.9 Impact,'Arial Black',sans-serif;letter-spacing:2px;margin:6px 0;
+  background:linear-gradient(#fff 10%,#9ee7ff 45%,#1676d8 55%,#00f 90%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-text-stroke:3px #000;filter:drop-shadow(5px 5px 0 var(--hot));animation:wob 3s ease-in-out infinite}
+@keyframes wob{50%{transform:rotate(-2deg) scale(1.03)}}
+.ticker{display:inline-block;font:30px var(--px);background:#000;color:var(--aqua);border:3px inset #888;padding:2px 14px}
+.heroimg{width:min(340px,80vw);margin:20px auto;border:8px ridge #c0c0c0;background:#fff;padding:4px;transform:rotate(-2deg);box-shadow:8px 8px 0 #000}
+.heroimg figcaption{color:#000;font:700 14px var(--comic);padding-top:4px}
+.tag{font:700 clamp(18px,3.4vw,26px) var(--comic);max-width:640px;margin:0 auto 18px}
+.btn95{display:inline-block;background:var(--win);color:#000 !important;text-decoration:none;font:700 20px Arial,sans-serif;padding:10px 26px;border:4px outset #fff;margin:6px;box-shadow:3px 3px 0 #000}
+.btn95:active{border-style:inset;transform:translate(2px,2px)}
+.btn95.hot{background:linear-gradient(#ffef5a,#ff9d00);font-family:Impact,sans-serif;font-size:26px;letter-spacing:1px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.badge{width:88px;height:31px;font:700 9px/1.1 Verdana,sans-serif;display:flex;align-items:center;justify-content:center;text-align:center;border:2px outset #ddd;color:#fff}
+.b1{background:linear-gradient(90deg,#036,#09c)} .b2{background:#000;color:var(--lime)} .b3{background:linear-gradient(#f0f,#60f)} .b4{background:#c00}
+.counter{margin:18px auto 0;font:16px Arial,sans-serif}
+.counter .odo{display:inline-flex;gap:2px;vertical-align:middle;background:#000;padding:3px;border:2px inset #888}
+.counter .odo i{font:normal 26px var(--px);color:#0f0;background:#111;width:18px;text-align:center;font-style:normal}
+
+/* ---------- LORE ---------- */
+.lore p{margin:0 0 14px}
+.lore p:first-of-type:first-letter{float:left;font:900 64px/0.8 Impact,sans-serif;color:var(--aqua);margin:6px 8px 0 0}
+.lore .note{font:700 15px var(--comic);color:var(--lime)}
+.hl{background:var(--hot);color:#fff;padding:0 4px}
+.fade{opacity:0;transform:translateY(40px) rotate(-1deg);transition:opacity .7s,transform .7s}
+.fade.in{opacity:1;transform:none}
+
+/* ---------- GALLERY ---------- */
+.album{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
+.pic{background:var(--win);border:3px outset #fff;padding:5px;color:#000;font:12px Arial,sans-serif;text-align:center;cursor:pointer;transition:transform .2s}
+.pic:nth-child(odd){transform:rotate(-1.5deg)} .pic:nth-child(even){transform:rotate(1.3deg)}
+.pic:hover{transform:scale(1.07) rotate(0);z-index:2}
+.pic img{width:100%;aspect-ratio:1;object-fit:cover;border:2px inset #888;background:#000}
+.pic b{display:block;margin-top:4px;word-break:break-all}
+.pic small{color:#555}
+.album-note{font:700 15px var(--comic);margin-top:14px;color:var(--aqua)}
+
+/* ---------- STEPS / TOKEN ---------- */
+ol.steps{padding-left:0;list-style:none;counter-reset:s;margin:0}
+ol.steps li{counter-increment:s;display:flex;gap:14px;align-items:flex-start;margin:0 0 14px;padding:10px;background:#fff;border:2px dashed #ff0080}
+ol.steps li:before{content:counter(s);flex:0 0 46px;height:46px;display:grid;place-items:center;font:900 30px Impact,sans-serif;color:#fff;background:#0066ff;border:3px outset #6af;border-radius:50%}
+ol.steps b{font-family:var(--comic);font-size:19px}
+table.tok{width:100%;border-collapse:separate;border-spacing:4px;font:18px var(--comic)}
+table.tok td{border:3px ridge #7fd8ff;padding:8px 12px;background:rgba(0,40,120,.6)}
+table.tok td:first-child{color:var(--lime);font-weight:700;width:42%}
+.ca{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:18px;background:#000;border:3px inset #888;padding:10px}
+.ca code{flex:1 1 220px;font:22px var(--px);color:#0f0;word-break:break-all}
+
+/* ---------- WEBRING / GUESTBOOK ---------- */
+.ring{text-align:center;font:700 18px var(--comic)}
+.ring .row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:12px 0}
+.ring .row a{display:inline-block;padding:8px 16px;background:#000080;color:#fff;border:3px outset #66f;text-decoration:none;font:700 16px Arial,sans-serif}
+.gb-entry{border-bottom:2px dotted #e0b000;padding:8px 0;font-size:16px}
+.gb-entry b{color:#0000ee;font-family:var(--comic)}
+.gb-entry i{color:#888;font-size:13px}
+.gb-form{display:grid;gap:8px;margin-top:14px;grid-template-columns:1fr 2fr auto}
+.gb-form input{font:16px Arial,sans-serif;padding:6px;border:2px inset #ccc;min-width:0}
+@media(max-width:600px){.gb-form{grid-template-columns:1fr}}
+
+/* ---------- POPUP ---------- */
+.win{position:fixed;z-index:60;width:min(300px,86vw);background:var(--win);color:#000;border:3px outset #fff;box-shadow:6px 6px 0 rgba(0,0,0,.5);font:15px Arial,sans-serif;animation:pop .25s cubic-bezier(.3,1.7,.5,1)}
+@keyframes pop{from{transform:scale(.3)}}
+.win .tb{background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font-weight:700;padding:3px 4px 3px 8px;display:flex;justify-content:space-between;align-items:center;font-size:13px}
+.win .tb button{width:22px;height:20px;border:2px outset #fff;background:var(--win);font:700 13px Arial;padding:0;line-height:1}
+.win .bd{padding:14px;display:flex;gap:12px;align-items:center}
+.win .bd img{width:56px;height:56px;border-radius:50%;object-fit:cover}
+.win .bd strong{font:700 22px var(--comic)}
+.win .ok{display:block;margin:0 auto 12px;padding:4px 26px;background:var(--win);border:3px outset #fff;font:14px Arial}
+.win.big{width:min(560px,92vw);left:50%!important;top:50%!important;transform:translate(-50%,-50%);animation:none}
+.win.big img.full{width:100%;max-height:70vh;object-fit:contain;background:#000}
+
+footer{background:#000;color:#aaa;font:13px Arial,sans-serif;text-align:center;padding:24px 14px 80px}
+footer .mid{font:700 16px var(--comic);color:var(--lime)}
+.bubtrail{position:fixed;pointer-events:none;z-index:70;width:10px;height:10px;border:1.5px solid #bff;border-radius:50%;animation:bt 0.9s ease-out forwards}
+@keyframes bt{to{transform:translateY(-40px) scale(1.6);opacity:0}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation:none!important;transition:none!important}
+  .fade{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+@supports (overflow:clip){html,body{overflow-x:clip}}
+</style>
+</head>
+<body>
+
+<!-- the ocean: every layer here moves at its own speed -->
+<div id="ocean" aria-hidden="true">
+  <div class="water"></div>
+  <div class="rays" data-speed="-0.05"></div>
+  <div class="tile" data-speed="-0.25"></div>
+  <div class="kelp k1" data-speed="-0.12"><svg viewBox="0 0 1200 400" preserveAspectRatio="none"><g fill="#0b5e3a" class="sway"><path d="M60 400 C40 300 110 250 70 150 C50 90 100 40 80 0 L95 0 C120 60 70 110 95 160 C130 250 70 300 90 400Z"/><path d="M380 400 C350 320 420 240 390 170 C370 110 420 60 400 20 L415 20 C440 80 395 120 410 170 C445 260 380 320 405 400Z"/><path d="M760 400 C730 290 800 230 770 140 L785 140 C820 240 750 300 785 400Z"/><path d="M1080 400 C1050 300 1120 220 1090 120 L1105 120 C1140 230 1070 300 1105 400Z"/></g></svg></div>
+  <div class="kelp k2" data-speed="-0.3"><svg viewBox="0 0 1200 400" preserveAspectRatio="none"><g fill="#118a4f" class="sway" style="animation-duration:4s"><path d="M200 400 C170 300 250 230 215 120 C200 70 240 30 225 0 L245 0 C265 50 225 90 240 130 C280 240 210 300 235 400Z"/><path d="M580 400 C555 330 610 260 585 190 L605 190 C630 270 575 330 605 400Z"/><path d="M930 400 C900 300 970 230 940 100 L960 100 C995 230 925 300 955 400Z"/></g><path d="M0 400 Q150 340 300 380 T600 370 T900 385 T1200 360 V400Z" fill="#c9b47a"/></svg></div>
+  <div class="kelp k3" data-speed="-0.55"><svg viewBox="0 0 1200 300" preserveAspectRatio="none"><g fill="#16b35f" class="sway" style="animation-duration:3.2s"><path d="M40 300 C10 200 90 140 50 40 L75 40 C110 150 40 210 75 300Z"/><path d="M1130 300 C1100 210 1170 150 1140 60 L1165 60 C1195 160 1130 220 1165 300Z"/></g><path d="M0 300 Q200 250 420 280 T820 270 T1200 260 V300Z" fill="#e2cf92"/></svg></div>
+  <div id="bubbles"></div>
+  <div id="swimmer" data-speed="0"><span class="say">dawg shut up</span><canvas id="shorkcv" width="150" height="150"></canvas></div>
+  <div class="dark"></div>
+</div>
+
+<div id="depth" aria-hidden="true"><b>DEPTH</b><div class="tube"><div class="fill" id="dfill"></div></div><span class="ft" id="dft">0</span><br><b>FEET</b></div>
+
+<div class="marq" role="marquee"><span>~*~ WELCOME 2 THE SHORK FAN PAGE ~*~ shork is now on SOLANA!!! ~*~ ticker is $SHORK ~*~ please do not ask shork questions. shork will tell u to shut up ~*~ the deeper u scroll the blurrier he gets. this is a FEATURE ~*~ sign my guestbook!!! ~*~</span></div>
+
+<div class="wrap">
+
+<header class="hero" id="top">
+  <div class="welcome">&#9733; u r now entering the official &#9733;</div>
+  <h1 class="title">SHORK</h1>
+  <div class="ticker">$SHORK</div>
+  <figure class="heroimg"><img src="meme_01.jpg" alt="Shork: a blurry little blue shark floating above the sand" width="607" height="607"><figcaption>shork.jpg (he is not happy 2 see u)</figcaption></figure>
+  <p class="tag">The blurriest shark on the internet. Nobody knows where he came from. He would like you to stop talking.</p>
+  <a class="btn95 hot" href="#" id="buyTop">BUY $SHORK</a>
+  <a class="btn95" href="#lore">wat is shork?</a>
+  <div class="uc"><div class="digger"></div><span class="blink">UNDER CONSTRUCTION</span><div class="digger"></div></div>
+  <div class="badges" aria-hidden="true"><div class="badge b1">BEST VIEWED IN NETSCAPE NAVIGATOR</div><div class="badge b2">800x600 OR DIE</div><div class="badge b3">MADE W/ NOTEPAD</div><div class="badge b4">NO FRAMES ZONE</div><div class="badge b1">SOLANA POWERED</div></div>
+  <div class="counter">u r visitor number <span class="odo" id="odo"></span> to the shork page</div>
+</header>
+
+<hr class="rain">
+
+<section class="box lore fade" id="lore">
+  <h2>~ The Legend of Shork ~</h2>
+  <p>Nobody knows where Shork came from. There was no press release and no studio. One day a <span class="hl">low-res blue shark</span>, floating a few inches above some beige sand, showed up in group chats with one caption: <i>dawg shut up</i>. That's all we have. It got screenshotted and re-saved so many times that it is now mostly compression.</p>
+  <p>Look at him. He has no fins to speak of and his teeth are a pink smear. He casts a shadow even though he is clearly floating, and he is resting a judgmental face on a beach that does not exist. Scientists call this a <b>reaction image</b>. We call it a shork.</p>
+  <p>What does Shork mean? Shork is the face you make when someone in the chat says "bro trust me this one is different." Shork is the noise-cancelling headphones of the ocean. He does not want your thread. He does not want your alpha. He wants you to be quiet.</p>
+  <p>Over time the shork family grew: a cousin in a shark hoodie, a little dog who took a selfie with a real great white, and one shork who went to look at the stock market and came back with the same face. All of them have the same energy. All of them would like the conversation to end.</p>
+  <p>So why a coin? Because every chart, every call and every 3am "gm" deserves one honest reply. $SHORK is a meme coin for anyone who has ever wanted to reply to the whole timeline with one blurry shark. No roadmap. No promises. Just shork.</p>
+  <p class="note">* P.S. scroll deeper. he gets worse. this is canon.</p>
+</section>
+
+<section class="box lt fade" id="gallery">
+  <h2>~ My Shork Photo Album ~</h2>
+  <p style="margin-top:0">click a pic 2 open it in the image viewer!!! (dial-up users: pls wait)</p>
+  <div class="album" id="album"></div>
+  <p class="album-note" style="color:#0066cc">all pics r public domain probably. do NOT hotlink my shorks!!!</p>
+</section>
+
+<hr class="rain">
+
+<section class="box fade" id="buy">
+  <h2>How 2 Get $SHORK</h2>
+  <div class="uc" style="margin:0 0 16px"><span>4 easy steps!!! even shork could do it (he won't)</span></div>
+  <ol class="steps" style="color:#111">
+    <li><div><b>Get Phantom</b><br>Download the Phantom wallet app or browser extension. Write ur seed phrase on paper. Do NOT tell shork. Do not tell anyone.</div></li>
+    <li><div><b>Get some SOL</b><br>Buy SOL on an exchange and send it to ur Phantom wallet. Keep a little extra for fees.</div></li>
+    <li><div><b>Go to pump.fun</b><br>Open pump.fun and connect ur wallet. Make sure it's the real site. Shork hates phishing (and fishing).</div></li>
+    <li><div><b>Paste the CA &amp; buy</b><br>Paste the official contract address from below, pick an amount, hit buy. Then shut up about it for at least 5 minutes.</div></li>
+  </ol>
+</section>
+
+<section class="box fade" id="tokenomics">
+  <h2>Shorkenomics</h2>
+  <!-- only keep these claims if true at launch -->
+  <table class="tok">
+    <tr><td>Total supply</td><td>1,000,000,000 $SHORK</td></tr>
+    <tr><td>Launch</td><td>Fair launch on pump.fun</td></tr>
+    <tr><td>Ticker</td><td>$SHORK</td></tr>
+    <tr><td>Roadmap</td><td>shut up</td></tr>
+    <tr><td>Team allocation</td><td>shork does not want ur allocation</td></tr>
+  </table>
+  <div class="ca"><code id="caText">Contract address revealed at launch</code><button class="btn95" id="caBtn" type="button" style="margin:0">COPY</button></div>
+</section>
+
+<section class="box lt ring fade" id="socials">
+  <h2>~*~ The Shork Webring ~*~</h2>
+  <p style="margin:0">this site is a proud member of the BLURRY ANIMAL WEBRING</p>
+  <div class="row"><a href="#">&lt;&lt; prev</a><a href="#">random shork</a><a href="#">next &gt;&gt;</a></div>
+  <div class="row">
+    <a href="#" style="background:#000">X / Twitter</a>
+    
+    <a href="#" style="background:#0a8a3a">pump.fun</a>
+    <a href="#" style="background:#333">DexScreener</a>
+  </div>
+</section>
+
+<section class="box lt fade" id="guestbook">
+  <h2>Sign My Guestbook!!!</h2>
+  <div id="gb">
+    <div class="gb-entry"><b>xX_ShorkLvr_Xx</b> <i>- 03/14/1999 2:41am</i><br>kool page!!! i asked shork a question and he told me 2 shut up. 10/10</div>
+    <div class="gb-entry"><b>marine_biologist_dave</b> <i>- 06/02/1999</i><br>this is not a real species. please stop emailing me.</div>
+    <div class="gb-entry"><b>webmaster</b> <i>- 01/01/2000</i><br>Y2K update: shork survived. ur computer did not.</div>
+  </div>
+  <form class="gb-form" id="gbForm" autocomplete="off">
+    <input id="gbName" maxlength="24" placeholder="ur name" aria-label="Your name">
+    <input id="gbMsg" maxlength="120" placeholder="ur message 4 shork" aria-label="Your message">
+    <button class="btn95" type="submit" style="margin:0;font-size:16px;padding:6px 14px">SIGN</button>
+  </form>
+</section>
+
+<div class="uc"><div class="digger"></div><span>bottom of the ocean. nothing 2 see. shut up.</span><div class="digger"></div></div>
+</div>
+
+<footer>
+  <p class="mid">thx 4 visiting!!! now go away (lovingly)</p>
+  <p>$SHORK is a meme coin with no intrinsic value and no expectation of financial return. It is not an investment. There is no team promise, no roadmap and no utility. Only buy what you can afford to lose entirely. Not affiliated with any aquarium, shark, plush maker, frog, or the original anonymous creator of the image.</p>
+  <p>&copy; 1999-2026 the shork fan page. last updated: never.</p>
+</footer>
+
+<script>
+const CA = "";
+(function(){
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = s => document.querySelector(s);
+
+  /* ---- odometer ---- */
+  const odo = $('#odo'); const n = String(1337000 + Math.floor(Math.random()*90000)).padStart(8,'0');
+  odo.innerHTML = [...n].map(d=>'<i>'+d+'</i>').join('');
+
+  /* ---- CA ---- */
+  const caText = $('#caText'), caBtn = $('#caBtn');
+  if (CA) caText.textContent = CA;
+  caBtn.addEventListener('click', () => {
+    if (!CA) { caBtn.textContent = 'NOT YET'; setTimeout(()=>caBtn.textContent='COPY',1400); popup('no CA yet. shut up and wait.'); return; }
+    navigator.clipboard.writeText(CA).then(()=>{caBtn.textContent='COPIED!'; setTimeout(()=>caBtn.textContent='COPY',1400);});
+  });
+  $('#buyTop').addEventListener('click', e => { e.preventDefault(); document.getElementById('buy').scrollIntoView({behavior: reduce?'auto':'smooth'}); });
+
+  /* ---- gallery ---- */
+  const pics = [
+    ['meme_01','shork_original.jpg','the one. the only.'],
+    ['meme_02','shork_says.jpg','his catchphrase'],
+    ['meme_03','shork_stonks.jpg','shork checked the chart'],
+    ['meme_05','shork_selfie.jpg','pug + the big guy'],
+    ['remix_01','shork_FRIED.jpg','deep fried 4 freshness'],
+    ['remix_02','shork_56k.jpg','loaded on dial-up'],
+    ['remix_03','shork_x2.jpg','mirror shork'],
+    ['remix_04','shork_negative.jpg','ghost shork'],
+    ['remix_05','shork_ticker.jpg','official poster'],
+    ['remix_06','shork_FINAL(2).jpg','do not open at work']
+  ];
+  const album = $('#album');
+  pics.forEach(([f,name,cap]) => {
+    const d = document.createElement('div'); d.className='pic'; d.tabIndex=0; d.setAttribute('role','button');
+    d.innerHTML = '<img loading="lazy" src="'+f+'.jpg" alt="'+cap+'"><b>'+name+'</b><small>'+(20+Math.floor(Math.random()*60))+'kb</small>';
+    const open = () => viewer(f,name,cap);
+    d.addEventListener('click',open); d.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+    album.appendChild(d);
+  });
+
+  /* ---- popups (in-page only) ---- */
+  function mkWin(title, body, cls){
+    const w = document.createElement('div'); w.className='win '+(cls||''); w.setAttribute('role','dialog');
+    w.innerHTML = '<div class="tb"><span>'+title+'</span><button type="button" aria-label="Close">x</button></div>'+body;
+    const close = () => w.remove();
+    w.querySelector('.tb button').addEventListener('click',close);
+    const ok = w.querySelector('.ok'); if (ok) ok.addEventListener('click',close);
+    document.body.appendChild(w); return w;
+  }
+  function viewer(f,name,cap){
+    document.querySelectorAll('.win.big').forEach(x=>x.remove());
+    mkWin(name+' - Shork Image Viewer 1.0','<img class="full" src="'+f+'.jpg" alt="'+cap+'"><div style="padding:8px;font:700 15px var(--comic)">'+cap+'</div><button class="ok" type="button">OK</button>','big');
+  }
+  const lines = ['dawg shut up','stfu (respectfully)','shut up','no one asked','dawg. shut up.','shhhhhhh','not now. shut up.'];
+  let popCount = 0;
+  function popup(msg){
+    if (document.querySelectorAll('.win:not(.big)').length > 2) return;
+    const w = mkWin('Message from SHORK.EXE','<div class="bd"><img src="logo.png" alt=""><strong>'+(msg||lines[popCount++%lines.length])+'</strong></div><button class="ok" type="button">ok sorry</button>');
+    w.style.left = (8 + Math.random()*(innerWidth - Math.min(300,innerWidth*.86) - 24)) + 'px';
+    w.style.top = (60 + Math.random()*(innerHeight*.5)) + 'px';
+  }
+  // fire a popup when certain sections come into view (once each)
+  const popIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { popup(); popIO.unobserve(e.target); } }), {threshold:.5});
+  ['#lore','#tokenomics','#guestbook'].forEach(s => popIO.observe($(s)));
+
+  /* ---- guestbook ---- */
+  $('#gbForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const name = $('#gbName').value.trim() || 'anonymous', msg = $('#gbMsg').value.trim();
+    if (!msg) { popup('say something. no wait. shut up.'); return; }
+    const d = document.createElement('div'); d.className='gb-entry';
+    const b = document.createElement('b'); b.textContent = name;
+    const i = document.createElement('i'); i.textContent = ' - just now';
+    d.append(b, i, document.createElement('br'), document.createTextNode(msg));
+    $('#gb').appendChild(d); e.target.reset();
+    setTimeout(()=>popup('dawg shut up'), 500);
+  });
+
+  /* ---- reveal on scroll ---- */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.15});
+  document.querySelectorAll('.fade').forEach(el => io.observe(el));
+
+  /* ---- shork canvas: gets crunchier with depth ---- */
+  const cv = $('#shorkcv'), cx = cv.getContext('2d'), src = new Image(), tmp = document.createElement('canvas');
+  src.src = 'logo.png';
+  let lastQ = -1;
+  function drawShork(depth){
+    if (!src.complete || !src.naturalWidth) return;
+    const q = Math.max(6, Math.round(150 * Math.pow(1 - depth, 2.2)));   // resolution shrinks with depth
+    if (q === lastQ) return; lastQ = q;
+    tmp.width = tmp.height = q;
+    const t = tmp.getContext('2d'); t.drawImage(src, 200, 200, 620, 620, 0, 0, q, q);
+    cx.imageSmoothingEnabled = false; cx.clearRect(0,0,150,150); cx.drawImage(tmp, 0, 0, 150, 150);
+    cv.style.filter = 'saturate(' + (1 + depth*4) + ') contrast(' + (1 + depth*1.6) + ') blur(' + (depth*1.5).toFixed(2) + 'px)';
+  }
+  src.onload = () => drawShork(0);
+
+  /* ---- bubbles ---- */
+  if (!reduce) {
+    const bb = $('#bubbles');
+    for (let k=0;k<18;k++){ const b=document.createElement('span'); b.className='bub'; const s=6+Math.random()*22;
+      b.style.cssText='left:'+(Math.random()*100)+'%;width:'+s+'px;height:'+s+'px;animation-duration:'+(7+Math.random()*10)+'s;animation-delay:-'+(Math.random()*12)+'s'; bb.appendChild(b); }
+    let lastT = 0;
+    addEventListener('pointermove', e => { const now = performance.now(); if (now - lastT < 70) return; lastT = now;
+      const b = document.createElement('span'); b.className='bubtrail'; b.style.left=(e.clientX-5)+'px'; b.style.top=(e.clientY-5)+'px';
+      document.body.appendChild(b); setTimeout(()=>b.remove(),900); });
+  }
+
+  /* ---- parallax loop ---- */
+  const layers = [...document.querySelectorAll('#ocean [data-speed]')].filter(l => l.id !== 'swimmer');
+  const sw = $('#swimmer'), dfill = $('#dfill'), dft = $('#dft'), root = document.documentElement;
+  let ticking = false, talked = 0;
+  function frame(){
+    ticking = false;
+    const y = scrollY, max = Math.max(1, document.documentElement.scrollHeight - innerHeight), p = Math.min(1, y / max);
+    root.style.setProperty('--deep', p.toFixed(3));
+    dfill.style.height = (p*100) + '%'; dft.textContent = Math.round(p * 1999);
+    drawShork(p);
+    if (reduce) return;
+    layers.forEach(l => { l.style.transform = 'translate3d(0,' + (y * parseFloat(l.dataset.speed)).toFixed(1) + 'px,0)'; });
+    // shork swims back and forth across the screen as you scroll
+    const W = innerWidth + 300, lap = (y * 0.6) % (W * 2), dir = lap < W ? 1 : -1;
+    const x = dir === 1 ? lap - 150 : (W * 2 - lap) - 150;
+    const bob = Math.sin(y / 90) * 18;
+    sw.style.transform = 'translate3d(' + x.toFixed(1) + 'px,' + (bob + p * innerHeight * .35).toFixed(1) + 'px,0) scaleX(' + (dir === 1 ? -1 : 1) + ') rotate(' + (Math.sin(y/140)*8).toFixed(1) + 'deg)';
+    sw.querySelector('.say').style.transform = 'scaleX(' + (dir === 1 ? -1 : 1) + ')';
+    if (Math.floor(y / 900) !== talked) { talked = Math.floor(y / 900); sw.classList.add('talk'); setTimeout(()=>sw.classList.remove('talk'), 1600); }
+  }
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, {passive:true});
+  addEventListener('resize', frame);
+  frame();
+  if (reduce) sw.style.transform = 'translate3d(20px,0,0)';
+})();
+</script>
+</body>
+</html>
